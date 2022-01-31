@@ -1,0 +1,26 @@
+
+.card {
+  text-align: center;
+
+  .icon {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 24px;
+  }
+
+  .title {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.35px;
+    color: #2D314D;
+    margin-bottom: 16px;
+  }
+
+  .description {
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.2px;
+    color: #9597A5;
+  }
+}
