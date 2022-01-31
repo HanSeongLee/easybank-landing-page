@@ -1,0 +1,10 @@
+.main {
+
+  section {
+    background: #FAFAFA;
+
+    &:nth-child(odd) {
+      background: #F4F5F7;
+    }
+  }
+}
