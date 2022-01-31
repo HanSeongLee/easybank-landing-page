@@ -3,6 +3,7 @@ import styles from './style.module.scss';
 import MenuContainer from "../../containers/MenuContainer";
 import Container from "../Container";
 import cn from "classnames";
+import Button from "../Button";
 
 const Menu = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -41,6 +42,11 @@ const Menu = () => {
                 )}
 
             </button>
+            <div className={styles.requestInviteButtonWrapper}>
+                <Button>
+                    Request Invite
+                </Button>
+            </div>
         </nav>
     );
 };
