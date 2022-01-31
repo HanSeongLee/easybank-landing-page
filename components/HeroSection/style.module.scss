@@ -1,0 +1,40 @@
+
+.section {
+  padding-bottom: 88px;
+
+  .mockupsContainer {
+    position: relative;
+    background: url("/img/bg-intro-mobile.svg") no-repeat 0 -70px;
+    background-size: cover;
+    z-index: -1;
+    margin-bottom: -130px;
+
+    .mockupsImage {
+      top: -115px;
+      position: relative;
+      width: 100%;
+    }
+  }
+
+  .contentContainer {
+    text-align: center;
+
+    .title {
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 47px;
+      letter-spacing: -0.7px;
+      color: #2D314D;
+      margin-top: 40px;
+      margin-bottom: 16px;
+    }
+
+    .description {
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: -0.2px;
+      color: #9597A5;
+      margin-bottom: 32px;
+    }
+  }
+}
