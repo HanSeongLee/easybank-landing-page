@@ -1,0 +1,31 @@
+
+.section {
+  text-align: center;
+  padding: 64px 0;
+
+  .header {
+    margin-bottom: 56px;
+
+    .title {
+      font-weight: 300;
+      font-size: 32px;
+      line-height: 38px;
+      letter-spacing: -0.5px;
+      color: #2D314D;
+      margin-bottom: 24px;
+    }
+
+    .description {
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: -0.2px;
+      color: #9597A5;
+    }
+  }
+
+  .featureContainer {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 32px;
+  }
+}
