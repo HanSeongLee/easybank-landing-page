@@ -1,8 +1,14 @@
+@import "styles/utils";
+
 .header {
   position: relative;
   padding: 22px 0;
   background: #FFFFFF;
   z-index: 1;
+
+  @include media(">tablet") {
+    padding: 18px 0;
+  }
 
   .container {
     display: flex;
