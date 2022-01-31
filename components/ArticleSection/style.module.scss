@@ -1,0 +1,23 @@
+
+.section {
+  padding: 88px 0;
+
+  .header {
+    margin-bottom: 31px;
+    text-align: center;
+
+    .title {
+      font-weight: 300;
+      font-size: 32px;
+      line-height: 38px;
+      letter-spacing: -0.57px;
+      color: #2D314D;
+    }
+  }
+
+  .latestArticleContainer {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 24px;
+  }
+}
