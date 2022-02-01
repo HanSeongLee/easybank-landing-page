@@ -6,12 +6,14 @@ import Button from "../Button";
 const HeroSection = () => {
     return (
         <section className={styles.section}>
-            <Container className={styles.mockupsContainer}>
-                <img className={styles.mockupsImage}
-                     src={'/img/image-mockups.png'}
-                     alt={''}
-                />
-            </Container>
+            <div className={styles.mockupsWrapper}>
+                <Container className={styles.mockupsContainer}>
+                    <img className={styles.mockupsImage}
+                         src={'/img/image-mockups.png'}
+                         alt={''}
+                    />
+                </Container>
+            </div>
             <Container className={styles.contentContainer}>
                 <h2 className={styles.title}>
                     Next generation
