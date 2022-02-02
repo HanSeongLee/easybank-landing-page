@@ -18,15 +18,15 @@ const Menu = () => {
 
     return (
         <nav className={styles.nav}>
-            <ul className={cn(styles.menuBackdrop, {
+            <div className={cn(styles.menuBackdrop, {
                 [styles.open]: menuOpen,
             })}>
                 <Container>
-                    <div className={styles.menuWrapper}>
+                    <ul className={styles.menuWrapper}>
                         <MenuContainer/>
-                    </div>
+                    </ul>
                 </Container>
-            </ul>
+            </div>
 
             <button className={styles.menuButton}
                     onClick={onMenuToggle}
