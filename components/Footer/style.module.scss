@@ -37,6 +37,20 @@
         justify-content: flex-start;
         margin: 0;
       }
+
+      @include media(">desktop") {
+        li {
+          svg path {
+            transition: fill 0.3s;
+          }
+
+          &:hover {
+            svg path {
+              fill: #30C88F;
+            }
+          }
+        }
+      }
     }
 
     .sitemapContainer {
@@ -54,6 +68,16 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin-bottom: 0;
+      }
+
+      @include media(">desktop") {
+        a {
+          transition: color 0.3s;
+
+          &:hover {
+            color: #30C88F;
+          }
+        }
       }
     }
 
