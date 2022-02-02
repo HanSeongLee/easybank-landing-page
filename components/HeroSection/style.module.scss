@@ -13,7 +13,7 @@
     margin-bottom: -130px;
 
     @include media(">tablet") {
-      margin-bottom: -300px;
+      margin-bottom: -341px;
     }
 
     &::before {
@@ -25,18 +25,22 @@
       content: "";
 
       @include media(">tablet") {
-        height: 690px;
-        background: url("/img/bg-intro-desktop.svg") no-repeat 0 -70px;
+        height: 649px;
+        background: url("/img/bg-intro-desktop.svg") no-repeat;
+        background-position: bottom -120px right -485px;
       }
     }
 
     .mockupsContainer {
+      overflow: hidden;
+
       .mockupsImage {
         position: relative;
         top: -115px;
         width: 100%;
 
         @include media(">tablet") {
+          right: -123px;
           width: 732px;
         }
       }
@@ -49,6 +53,8 @@
     @include media(">tablet") {
       max-width: 447px;
       text-align: left;
+      padding-top: 50px;
+      padding-left: 30px;
     }
 
     .title {
