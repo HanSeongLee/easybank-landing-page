@@ -1,11 +1,14 @@
+@import "styles/utils";
 
 .card {
-  text-align: center;
-
   .icon {
     width: 72px;
     height: 72px;
     margin-bottom: 24px;
+
+    @include media(">tablet") {
+      margin-bottom: 40px;
+    }
   }
 
   .title {
@@ -15,6 +18,13 @@
     letter-spacing: -0.35px;
     color: #2D314D;
     margin-bottom: 16px;
+
+    @include media(">tablet") {
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -0.42px;
+      margin-bottom: 26px;
+    }
   }
 
   .description {
@@ -22,5 +32,10 @@
     line-height: 25px;
     letter-spacing: -0.2px;
     color: #9597A5;
+
+    @include media(">tablet") {
+      font-size: 16px;
+      line-height: 26px;
+    }
   }
 }
