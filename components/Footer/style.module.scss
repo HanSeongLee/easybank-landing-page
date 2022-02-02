@@ -1,26 +1,46 @@
+@import "styles/utils";
 
 .footer {
   background: #2D314D;
   padding: 40px 0;
   text-align: center;
 
+  @include media(">tablet") {
+    text-align: left;
+    padding: 48px 0;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
+
+    @include media(">tablet") {
+      display: grid;
+      grid-template-areas: "logo sitemap button"
+                           "social sitemap copyright";
+      grid-gap: 24px;
+    }
 
     svg > g > path {
       fill: #FFFFFF;
     }
 
     .socialLinkContainer {
+      grid-area: social;
       display: flex;
       align-items: center;
       justify-content: center;
       grid-gap: 16px;
       margin: 32px 0;
+
+      @include media(">tablet") {
+        justify-content: flex-start;
+        margin: 0;
+      }
     }
 
     .sitemapContainer {
+      grid-area: sitemap;
       display: flex;
       flex-direction: column;
       grid-gap: 8px;
@@ -29,14 +49,31 @@
       letter-spacing: -0.23px;
       color: #FFFFFF;
       margin-bottom: 32px;
+
+      @include media(">tablet") {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 0;
+      }
+    }
+
+    .buttonWrapper {
+      grid-area: button;
+      text-align: right;
     }
 
     .copyright {
+      grid-area: copyright;
       font-size: 15px;
       line-height: 26px;
       letter-spacing: -0.23px;
       color: rgba(255, 255, 255, 0.5);
       margin-top: 24px;
+
+      @include media(">tablet") {
+        text-align: right;
+        margin-top: 0;
+      }
     }
   }
 }

@@ -20,7 +20,7 @@ const Footer = () => {
                     <SitemapContainer />
                 </ul>
 
-                <div>
+                <div className={styles.buttonWrapper}>
                     <Button>
                         Request Invite
                     </Button>
