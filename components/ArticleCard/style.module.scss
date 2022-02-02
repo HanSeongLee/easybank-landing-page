@@ -1,8 +1,10 @@
+@import "styles/utils";
 
 .card {
   background: #FFFFFF;
   border-radius: 5px;
   overflow: hidden;
+  cursor: pointer;
 
   .thumbnail {
     width: 100%;
@@ -28,6 +30,14 @@
       letter-spacing: -0.28px;
       color: #2D314D;
       margin-bottom: 8px;
+
+      @include media(">desktop") {
+        transition: color 0.3s;
+
+        &:hover {
+          color: #30C88F;
+        }
+      }
     }
 
     .description {
