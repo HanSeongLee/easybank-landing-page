@@ -14,5 +14,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .hidden {
+      position: absolute;
+      top: -9999px;
+    }
   }
 }
