@@ -1,10 +1,20 @@
+@import "styles/utils";
 
 .section {
   text-align: center;
   padding: 64px 0;
 
+  @include media(">tablet") {
+    text-align: left;
+    padding: 96px 0 94px;
+  }
+
   .header {
     margin-bottom: 56px;
+
+    @include media(">tablet") {
+      margin-bottom: 72px;
+    }
 
     .title {
       font-weight: 300;
@@ -13,6 +23,13 @@
       letter-spacing: -0.5px;
       color: #2D314D;
       margin-bottom: 24px;
+
+      @include media(">tablet") {
+        font-size: 40px;
+        line-height: 64px;
+        letter-spacing: -0.7px;
+        margin-bottom: 16px;
+      }
     }
 
     .description {
@@ -20,6 +37,13 @@
       line-height: 25px;
       letter-spacing: -0.2px;
       color: #9597A5;
+
+      @include media(">tablet") {
+        width: 635px;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.28px;
+      }
     }
   }
 
@@ -27,5 +51,11 @@
     display: flex;
     flex-direction: column;
     grid-gap: 32px;
+
+    @include media(">tablet") {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 30px;
+    }
   }
 }
