@@ -6,7 +6,7 @@ import LogoImage from '/public/logo.svg';
 const Logo = () => {
     return (
         <Link href={'/'}>
-            <a>
+            <a aria-label={'easybank'}>
                 <LogoImage />
             </a>
         </Link>
