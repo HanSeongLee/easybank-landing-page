@@ -83,7 +83,10 @@
 
     .buttonWrapper {
       grid-area: button;
-      text-align: right;
+
+      @include media(">tablet") {
+        text-align: right;
+      }
     }
 
     .copyright {
